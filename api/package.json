@@ -1,0 +1,27 @@
+{
+  "name": "ruhacks",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@mapbox/node-pre-gyp": "^1.0.4",
+    "@sashido/teachablemachine-node": "^1.2.1",
+    "@teachablemachine/image": "^0.8.4",
+    "@tensorflow/tfjs": "^3.6.0",
+    "@tensorflow/tfjs-node": "^3.6.1",
+    "camera-capture": "0.0.11",
+    "cors": "^2.8.5",
+    "dcp-client": "^3.2.8",
+    "express": "^4.17.1",
+    "ml5": "^0.6.1",
+    "mongoose": "^5.12.7",
+    "nsfwjs": "^2.4.0",
+    "puppeteer": "^9.0.0"
+  }
+}

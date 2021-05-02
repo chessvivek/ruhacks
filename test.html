@@ -1,0 +1,27 @@
+<script
+  src="https://unpkg.com/@tensorflow/tfjs@2.6.0"
+  type="text/javascript"
+></script>
+<script src="https://unpkg.com/nsfwjs@2.3.0" type="text/javascript"></script>
+
+<!-- For testing: Load from local bundle `yarn scriptbundle && yarn minbundle` -->
+<!-- <script src="../../dist/nsfwjs.min.js"></script> -->
+
+<script>
+  // const nsfwjs = require('nsfwjs')
+  const img = new Image();
+  img.crossOrigin = "anonymous";
+  // some image here
+  img.src = "https://cpb-us-e1.wpmucdn.com/sites.northwestern.edu/dist/f/1372/files/2016/10/18qt595p136wvjpg-1i2wdfc.jpg";
+
+  async function init() {
+    const model = await nsfwjs.load();
+    model.classify(img).then((predictions) => {
+        console.log("Predictions", predictions);
+    });
+  }
+
+  init();
+  // Load the model.
+</script>
+<pre>Checkout console.log output for results!</pre>
